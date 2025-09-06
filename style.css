@@ -1,0 +1,418 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.navbar{
+  width: 86%;
+  display: flex;
+  margin: auto;
+  padding: 15px 0;
+  align-items: center;
+  justify-content: space-between;
+  
+}
+ul{
+  margin-top: 4%;
+}
+ul li{
+  list-style: none;
+  display: inline-block;
+  padding: 10px 16px;
+}
+
+ul li a{
+  font-size: 15px;
+  
+  text-decoration: none;
+  color: white;
+  margin-top: 0;
+}
+.navbar .logo{
+  width: 70px;
+  cursor: pointer;
+  margin-top: 15px;
+  margin-left: -5%;
+  position: sticky;
+}
+
+.navbar ul li::after{
+  content: '';
+  width: 0%;
+  height: 2px;
+  background-color: rgb(216, 117, 4);
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+  }
+  
+.navbar ul li:hover::after{
+  width: 100%;
+}
+
+
+.main{
+  width: 100%;
+  min-height: 100vh;
+  background-image:linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(priscaimg/IMG-20250904-WA0031.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+}
+.main h1{
+  color: white;
+  font-size: 60px;
+  padding-top: 100px;
+  margin-left: 30px;
+  font-family: sans-serif;
+}
+.main span{
+  color: rgb(0, 0, 0);
+}
+.main h2{
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  margin-left: 30px;
+  word-spacing: 2px;
+  font-family: sans-serif;
+}
+
+h3{
+  font-size: 30px;
+  text-align: center;
+  color: white;
+  margin: 10px;
+}
+
+
+nav.fa{
+  display: none;
+}
+
+@media(max-width:700px){
+  .main h1{
+    font-size: 25px;
+  }
+  .main h2{
+    font-size: 12px;
+  }
+  ul li{
+    display: block;
+  }
+  .navbar{
+    position: absolute;
+    background: red;
+    height: 100vh;
+    width: 200px;
+    top: 0;
+    right: 0;
+    text-align: left;
+    z-index: 2;
+
+  }
+  nav.fa{
+    display: block;
+    color: white;
+    margin: 10px;
+    font-size: 22px;
+    cursor: pointer;
+  }
+
+}
+
+
+.contain{
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+  gap: 20px;
+  background-color:white;
+  height: 100vh;
+  width: 100%;
+  margin-top: 5px;
+
+
+  
+}
+.text{
+  justify-content: center;
+  width: 50%;
+  color: black;
+  background-color: rgb(214, 214, 214);
+  border-radius: 10px;
+  margin-right: 15px;
+  border-color: black;
+
+  
+}
+h4{
+  margin-right:20px;
+  margin-top: 10px;
+  justify-content: center;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  align-items: center;
+  padding-right: 10px;
+  padding-left: 5px;
+  color: black;
+  font-weight: lighter;
+  line-height: 23px;
+ 
+
+
+}
+.pic{
+  width: 50%;
+
+
+}
+.pic img{
+  width: 60%;
+  margin-left: 80px;
+  align-items: center;
+  margin-top: 10px;
+  
+  
+}
+
+button{ 
+  margin-top: 20px;
+ width: 100px;
+  border-radius: 5px;
+  background-color: black;
+  height: 30px;
+  color: white;
+  margin-left: 5px;
+}
+button:hover{
+  color: yellow;
+  
+}
+
+.vision{
+  
+}
+
+}
+.vision{
+  background-color: rgb(188, 180, 197);
+  
+}
+
+
+.column{
+  display: flex;
+  width: 90%;
+  background-color: red;
+  height: 77vh;
+  margin-left: 79px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  justify-content: space-between;
+  
+  
+}
+.col1{
+  width: 50%;
+  height: auto;
+  background-color: black;
+  background-image: url(priscaimg/1757160684970.jpg);
+  background-size: 100%;
+  position: relative;
+}
+.col2{
+  width: 50%;
+  height: auto;
+  background-color: green;
+  background-image: url(priscaimg/IMG-20240828-WA0000.jpg);
+  background-size: 100%;
+}
+
+.hideal{
+  background-image:linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(./priscaimg/1757160684958.png);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 50vh;
+  background-attachment: fixed;
+}
+.hideal h1{
+  color: white;
+  font-size: 60px;
+  text-align: center;
+  padding-top: 30px;
+}
+.hideal span{
+  color: yellow;
+}
+.hideal button{
+  color: white;
+  background-color: black;
+  width: 120px;
+  height: 40px;
+  font-size: 15px;
+  align-items: center;
+  margin-left: 600px;
+  border-radius: 10px;
+}
+.hideal button:hover{
+  color: black;
+  background-color: white;
+  cursor: pointer;
+  transition: 1s;
+}
+.lady{
+  width: 100%;
+  height: 80vh;
+  display: flex;
+}
+.pic2{
+  width: 50%;
+}
+.pic2 img{
+  width: 60%;
+  align-items: center;
+  margin-left: 150px;
+  margin-top: 15px;
+  border-radius: 20px;
+  
+}
+.col3{
+  width: 50%;
+  height: 100vh;
+  background-image:linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(./priscaimg/IMG-20250904-WA0031.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  border-radius: 15px;
+  margin-right: 10px;
+}
+.project{
+  width: 90%;
+  height: 100vh;
+  background-color: white;
+  margin-top: 180px;
+  margin-bottom: 10px;
+  margin-left: 90px;
+  text-align: center;
+}
+.project h1{
+  font-size: 40px;
+}
+.col3 h3{
+  color: white;
+  font-size: 50px;
+  padding-top: 100px;
+  transition: 0.5s;
+  
+  
+}
+.col3 h3 span{
+  color: yellow;
+}
+.project-col{
+  flex-basis: 32%;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  position: relative;
+  overflow: hidden;
+}
+.project-col img{
+  width: 100%;
+  display: block;
+}
+.row{
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-between;
+}
+.layer{
+  background: transparent;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 0.5s;
+
+}
+.layer button{
+  margin-top: 20px;
+  width: 100px;
+   border-radius: 5px;
+   background-color: rgb(0, 0, 0);
+   height: 30px;
+   color: white;
+   margin-left: 5px;
+   margin-bottom: 5px;
+   bottom: 0;
+   left: 50%;
+   transform: translateX(-50%);
+   position: absolute;
+   transition: 0.5s;
+}
+
+.layer:hover{
+  background:rgba(226, 136, 0, 0.76) ;
+}
+.layer h4{
+  width: 100%;
+  font-weight: 500;
+  color: black;
+  font-size: 26px;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+  opacity: 0;
+  transition: 0.5s;
+  
+}
+.layer:hover h4{
+  bottom: 49%;
+  opacity: 1;
+}
+.team{
+  width: 100%;
+  text-align: center;
+}
+.team-col{
+  flex-basis: 32%;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  margin-left: 10px;
+  margin-right: 10px;
+  position: relative;
+  overflow: hidden;
+}
+.team-col img{
+  width: 100%;
+  display: block;
+}
+.team h1{
+  font-size: 40px;
+}
+.footer{
+  width: 100%;
+  text-align: center;
+  padding: 30px 0;
+  background-color: rgb(52, 0, 112);
+  color: white;
+  height: 30vh;
+  margin-top: 50px;
+}
+.footer h4{
+  color: white;
+}
+.icons{
+  color: yellow;
+  cursor: pointer;
+
+}
+.navfoot img{
+  width: 80px;
+  margin-top: 50px;
+}
